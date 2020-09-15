@@ -1,7 +1,3 @@
-This project is for deploy assets projects in aws. The credentials for jenkins are setter in the deploy script as environment variable.
-
-For run locally, you have two options:
-
 ##### 1. Set enviroment variables:
 
 ```
