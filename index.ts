@@ -104,7 +104,8 @@ if (pulumi.getStack() == 'production') {
 
         restrictions: {
             geoRestriction: {
-                restrictionType: "none",
+                locations: ['PE'],
+                restrictionType: 'whitelist'
             },
         },
 
