@@ -14,7 +14,7 @@ export const targetDomain = configPulumi.get("targetDomain");
  * Fetching certificate for target domain for CDN
  */
 const referenceCerts = configPulumi.get("referenceCerts");
-const certificates = new pulumi.StackReference(`${referenceCerts}/${env}`);
+const certificates = new pulumi.StackReference(`${referenceCerts}`);
 
 export const certificateArn = pulumi.output(certificates.getOutput("certificates")).apply(x => {
     for (let i in x) {
