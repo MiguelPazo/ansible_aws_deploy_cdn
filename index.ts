@@ -99,9 +99,9 @@ if (pulumi.getStack() == 'production') {
         priceClass: "PriceClass_100",
 
         customErrorResponses: [
-            {errorCode: 404, responseCode: 404, responsePagePath: "cdn_errors/404.html"},
-            {errorCode: 503, responseCode: 503, responsePagePath: "cdn_errors/503.html"},
-            {errorCode: 500, responseCode: 500, responsePagePath: "cdn_errors/500.html"},
+            {errorCode: 404, responseCode: 404, responsePagePath: "/cdn_errors/404.html"},
+            {errorCode: 503, responseCode: 503, responsePagePath: "/cdn_errors/503.html"},
+            {errorCode: 500, responseCode: 500, responsePagePath: "/cdn_errors/500.html"},
         ],
 
         restrictions: {
